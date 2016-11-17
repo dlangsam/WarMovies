@@ -1,0 +1,18 @@
+ <%= render("shared/header") %>
+
+     <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading"> The World Wars Movie Guide</div>
+                <div class="intro-lead-in">"<%=@quote.saying%>" - <%=@quote.author%></div>
+                
+                <a href="#purpose" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+
+     <%= render("shared/purpose") %>
+        <%= render("shared/accuracy") %>
+     <%= render("shared/movies") %>
+     <%= render("shared/conclusion") %>
+        <%= render("shared/contact") %>
