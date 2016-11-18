@@ -64,23 +64,23 @@ params.each do |param|
 end
 
 
-# Quote.create!([
-# {saying: "Never in the field of human conflict has so much been owed by so many to so few!",
-#  author: "Winston Churchill"},
-#  {saying: "An army is a team. It lives, eats, sleeps, fights as a team. This individuality stuff is a bunch of bullshit.",
-#  author: "George Patton"},
-#  {saying: "Courage is fear holding on a minute longer.",
-#  author: "George Patton"},
-#  {saying: "I'd rather have a German division infront of me, than a French one behind.",
-#  author: "George Patton"},
-#  {saying: "We herd sheep, we drive cattle, we lead people. Lead me, follow me, or get out of my way.",
-#  author: "George Patton"},
-#  {saying: "The tragedy of war is that it uses man's best to do man's worst.",
-#  author: "Henry Fosdick"},
-#  {saying: "We are going to have peace even if we have to fight for it.",
-#  author: "Dwight D. Eisenhower"},
-#  {saying: "The death of one man is a tragedy.  The death of millions is a statistic.",
-#  author: "Joseph Stalin"},
-#  {saying: "The object of war is not to die for your country, but to make the other bastard die for his.",
-#  author: "George Patton"}
-# ])
+Quote.create!([
+{saying: "Never in the field of human conflict has so much been owed by so many to so few!",
+ author: "Winston Churchill"},
+ {saying: "An army is a team. It lives, eats, sleeps, fights as a team. This individuality stuff is a bunch of bullshit.",
+ author: "George Patton"},
+ {saying: "Courage is fear holding on a minute longer.",
+ author: "George Patton"},
+ {saying: "I'd rather have a German division infront of me, than a French one behind.",
+ author: "George Patton"},
+ {saying: "We herd sheep, we drive cattle, we lead people. Lead me, follow me, or get out of my way.",
+ author: "George Patton"},
+ {saying: "The tragedy of war is that it uses man's best to do man's worst.",
+ author: "Henry Fosdick"},
+ {saying: "We are going to have peace even if we have to fight for it.",
+ author: "Dwight D. Eisenhower"},
+ {saying: "The death of one man is a tragedy.  The death of millions is a statistic.",
+ author: "Joseph Stalin"},
+ {saying: "The object of war is not to die for your country, but to make the other bastard die for his.",
+ author: "George Patton"}
+])
