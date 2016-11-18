@@ -12,12 +12,16 @@
                
                 <% @movies.each do |movie| %>
                  <div class="col-md-4 col-sm-6 portfolio-item">
-                     <a href="#portfolioModal1" ng-click="myModal.setCurrent($index, movie)" class="portfolio-link" data-toggle="modal">
+                     <a  class="portfolio-link js-show-movie" data-movie-uri="<%= movie.id %>" data-toggle="modal">
                     <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
                          <i class="fa fa-plus fa-3x"></i>
                     </div>
                     </div>
+                    <% image = movie.main_image %>
+                    <% if image != nil %>
+                     <img src="<%=image.url%>" class="move-poster img-responsive" alt = "<%=movie.name%>" />
+                     <%end %>
                          </a>
                 <div class="portfolio-caption">
                         <h4><%=movie.name%></h4>
@@ -42,12 +46,17 @@
 
             <% @classics.each do |movie| %>
                  <div class="col-md-4 col-sm-6 portfolio-item">
-                     <a href="#portfolioModal1" ng-click="myModal.setCurrent($index, movie)" class="portfolio-link" data-toggle="modal">
+                     <a class="portfolio-link js-show-movie" data-movie-uri="<%= movie.id %>"
+                     data-toggle="modal">
                     <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
                          <i class="fa fa-plus fa-3x"></i>
                     </div>
                     </div>
+                    <% image = movie.main_image %>
+                    <% if image != nil %>
+                     <img src="<%=image.url%>" class="move-poster img-responsive" alt = "<%=movie.name%>" />
+                     <% end %>
                          </a>
                 <div class="portfolio-caption">
                         <h4><%=movie.name%></h4>

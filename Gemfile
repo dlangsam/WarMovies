@@ -16,6 +16,8 @@ gem "twitter-bootstrap-rails"
 gem 'material_icons'
 gem 'sprockets'
 gem 'sprockets-es6', require: "sprockets/es6"
+gem 'aws-sdk', '~> 2'
+gem 'figaro'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
