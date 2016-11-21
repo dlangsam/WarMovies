@@ -24,9 +24,13 @@ function loadMovieModal(response){
 	$('.js-tagline').text(tagline);
 	$('.js-description').empty();
 	if(response.description !== null){
-		var paragraph = `<p>`;
-		paragraph +=response.description;
-		paragraph += `</p>`
+		var paragraph = "";
+		response.description.forEach(function(p){
+			paragraph += `<p>`;
+			paragraph += p;
+			paragraph += `</p>`
+		})
+
 		$('.js-description').append(paragraph);
 	}
 	$('.js-images').empty();

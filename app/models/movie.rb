@@ -6,8 +6,7 @@ class Movie < ApplicationRecord
 		if(self.description != nil )
 			s3 =  Aws::S3::Client.new(region: 'us-east-1')
 			obj = s3.get_object(bucket:'combat-aces', key: self.description )
-		
-			obj.body.read
+			desc_array = obj.body.read.split("\n")
 		else
 		return ""
 		end
