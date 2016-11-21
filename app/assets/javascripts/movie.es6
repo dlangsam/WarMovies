@@ -23,7 +23,7 @@ function loadMovieModal(response){
 		tagline = "";
 	$('.js-tagline').text(tagline);
 	$('.js-description').empty();
-	if(response.description !== null){
+	if(response.description.length > 0){
 		var paragraph = "";
 		response.description.forEach(function(p){
 			paragraph += `<p>`;
@@ -59,6 +59,7 @@ function loadMovieModal(response){
 
 $(document).on("turbolinks:load", function(){
 	$(".js-show-movie").on("click", function (event){
+		event.preventDefault();
 		var $button = $(event.currentTarget);
 		var movieId= $button.data("movie-uri");
 

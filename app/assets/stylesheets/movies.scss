@@ -1,3 +1,57 @@
 // Place all the styles related to the movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.modal-title{
+	background-image: url('logo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	height: 150px;
+	color: white;
+	//color: #add8e6;
+
+}
+.close-modal > div, .close-modal > div > div{
+	background-color: #add8e6;
+}
+.modal-title > div > h2{
+	font-size: 30px;
+
+}
+.modal-content{
+
+	// background-color: #0000a0;
+	// background-color: transparent;
+	
+}
+.modal-body{
+	
+
+}
+.close-btn{
+	background-color: #add8e6;
+	border-color: #add8e6;
+}
+@media (min-width: 401px){
+	.modal-title > div > h4{
+	position: relative;
+	top: -10px;
+
+}
+
+}
+
+@media (min-width: 995px){
+	.modal-title > div > h2{
+	float: right;
+	position: relative;
+	top: 90px;
+
+}
+.modal-title > div > h4{
+	position: relative;
+	top: 110px;
+	float: left;
+}
+}
+

@@ -4,7 +4,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-heading"> The World Wars Movie Guide</div>
-                <div class="intro-lead-in">"<%=@quote.saying%>" - <%=@quote.author%></div>
+                <div class="intro-lead-in">"<%=@quote.saying%>" <br>- <%=@quote.author%></div>
                 
                 <a href="#purpose" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
@@ -19,3 +19,24 @@
 
 
              <%= render("shared/movie_modal") %>
+
+             <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Content by Michael Kurey</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Combat Aces 2016</span>
+                    </ul>
+             
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <span class="copyright">Design by<a href ="https://dlangsam.github.io/" target="_blank" class="credit-link"> Devorah Langsam</a></span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>

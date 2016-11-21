@@ -13,6 +13,8 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+
 .text-muted {
   color: #777777;
 }
@@ -676,7 +678,7 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content h2 {
   margin-bottom: 15px;
-  font-size: 3em;
+ 
 }
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
@@ -710,7 +712,7 @@ ul.social-buttons li a:active {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #222222;
+  /*background-color: #222222;*/
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -721,7 +723,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #222222;
+  /*background-color: #222222;*/
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */

@@ -10,9 +10,99 @@
                     </p>
 
                     </h3>
-                    <h5>More Info Coming Soon</h5>
+                   
                 </div>
             </div>
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                           
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="https://s3.amazonaws.com/combat-aces/tld1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                      
+                                    <h4>Very Accurate</h4>
+                                 
+                                </div>
+                                <div class="timeline-body">
+                                        <% accurate_movies = @accurate_hash["very_accurate"] %>
+                                        <% accurate_movies.each do |movie| %>
+                                        <div>
+                                            <%=movie.name%> ( <%=movie.year%> )
+                                        </div>
+                                        <% end %>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="https://s3.amazonaws.com/combat-aces/bob1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                        
+                                    <h4>Accurate</h4>
+                                   
+                                </div>
+                               <div class="timeline-body">
+                                         <% accurate_movies = @accurate_hash["accurate"] %>
+                                        <% accurate_movies.each do |movie| %>
+                                        <div>
+                                            <%=movie.name%> ( <%=movie.year%> )
+                                        </div>
+                                        <% end %>                                 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                 <img class="img-circle img-responsive" src="https://s3.amazonaws.com/combat-aces/spr1.jpg" alt="">>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                
+                                    <h4>Modest Accuracy</h4>
+                                </div>
+                                <div class="timeline-body">
+                                 
+                                          <% accurate_movies = @accurate_hash["medium_accurate"] %>
+                                        <% accurate_movies.each do |movie| %>
+                                        <div>
+                                            <%=movie.name%> ( <%=movie.year%> )
+                                        </div>
+                                        <% end %>
+                              
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="https://s3.amazonaws.com/combat-aces/ttsot1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Pure Fiction</h4>
+                                    
+                                </div>
+                                <div class="timeline-body">
+                              
+                                        <% accurate_movies = @accurate_hash["fiction"] %>
+                                        <% accurate_movies.each do |movie| %>
+                                        <div>
+                                            <%=movie.name%> ( <%=movie.year%> )
+                                        </div>
+                                        <% end %>
+                           
+                                </div>
+                            </div>
+                        </li>
+                       
+                    </ul>
+                </div>
+             </div>   
 
 
             
