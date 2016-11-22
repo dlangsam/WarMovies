@@ -38,13 +38,13 @@ function loadMovieModal(response){
 		console.log("here");
 		var imageGallery = `<div class="gallery">
     <div class="img-wrap main-img js-main-img">
-    <img class = "selected-img" src="${response.images[0].url}" />
+    <img class = "selected-img" src="${response.images[0].url}" alt = "Main Image" />
     </div>
     <ul> <span >`
     	response.images.forEach(function(image, index){
     		imageGallery += `
 			 <a href><img class = "small-image js-image" data-url = "${image.url}"
-			src = "${image.url}" /></a>`
+			src = "${image.url}" alt="${response.movie.name}"/></a>`
        
 
     	});
@@ -70,7 +70,7 @@ $(document).on("turbolinks:load", function(){
 		event.preventDefault();
 		var button =  event.currentTarget;
 		var url = $(button).data("url");
-		var newImage = ` <img class = "selected-img" src="${url}" />`;
+		var newImage = ` <img class = "selected-img" src="${url}" alt="Main Image" />`;
 		$('.js-main-img').empty();
 		$('.js-main-img').append(newImage);
 	})
