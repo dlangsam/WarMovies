@@ -21,7 +21,7 @@
                         <li>
                            
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="https://s3.amazonaws.com/combat-aces/tld1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="/assets/the-longest-day.jpg" alt="The Longest Day">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -32,16 +32,16 @@
                                 <div class="timeline-body">
                                         <% accurate_movies = @accurate_hash["very_accurate"] %>
                                         <% accurate_movies.each do |movie| %>
-                                        <div>
+                                        <p class = "text-muted">
                                             <%=movie.name%> ( <%=movie.year%> )
-                                        </div>
+                                        </p>
                                         <% end %>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="https://s3.amazonaws.com/combat-aces/bob1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="/assets/band-of-brothers.jpg" alt="Band of brothers">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -52,15 +52,15 @@
                                <div class="timeline-body">
                                          <% accurate_movies = @accurate_hash["accurate"] %>
                                         <% accurate_movies.each do |movie| %>
-                                        <div>
+                                       <p class = "text-muted">
                                             <%=movie.name%> ( <%=movie.year%> )
-                                        </div>
+                                        </p>
                                         <% end %>                                 
                             </div>
                         </li>
                         <li>
                             <div class="timeline-image">
-                                 <img class="img-circle img-responsive" src="https://s3.amazonaws.com/combat-aces/spr1.jpg" alt="">>
+                                 <img class="img-circle img-responsive" src="/assets/pearl-harbor.jpg" alt="Pearl Harbor">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -71,16 +71,16 @@
                                  
                                           <% accurate_movies = @accurate_hash["medium_accurate"] %>
                                         <% accurate_movies.each do |movie| %>
-                                        <div>
+                                        <p class = "text-muted">
                                             <%=movie.name%> ( <%=movie.year%> )
-                                        </div>
+                                        </p>
                                         <% end %>
                               
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="https://s3.amazonaws.com/combat-aces/ttsot1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="/assets/tripoli.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -91,9 +91,9 @@
                               
                                         <% accurate_movies = @accurate_hash["fiction"] %>
                                         <% accurate_movies.each do |movie| %>
-                                        <div>
+                                        <p class = "text-muted">
                                             <%=movie.name%> ( <%=movie.year%> )
-                                        </div>
+                                        </p>
                                         <% end %>
                            
                                 </div>
