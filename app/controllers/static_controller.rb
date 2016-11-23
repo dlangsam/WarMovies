@@ -5,4 +5,8 @@ class StaticController < ApplicationController
 		@classics = Movie.where(classic: true)
 		@accurate_hash = Movie.accurate_movies
 	end
+
+	def about
+
+	end
 end

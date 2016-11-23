@@ -22,7 +22,14 @@
 
 }
 .selected-img{
+	max-width: 350px;
 	height: 300px;
+}
+
+@media (min-width: 401px){
+	.selected-img{
+		height: 300px;
+	}
 }
 .small-image{
 	height: 75px;
