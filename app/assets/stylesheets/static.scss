@@ -23,11 +23,12 @@
 }
 .selected-img{
 	max-width: 350px;
-	height: 300px;
+	max-height: 300px;
 }
 
-@media (min-width: 401px){
+@media (min-width: 601px){
 	.selected-img{
+		max-width: none;
 		height: 300px;
 	}
 }
