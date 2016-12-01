@@ -13,6 +13,19 @@ class Movie < ApplicationRecord
 		}
 
 	end
+
+	def self.sizes
+		large_movies = Movie.where("size >= 30" )
+		small_movies = Movie.where("size < 30 and size > 1" )
+		one_person_movies = Movie.where("size = 1" )
+	
+		return {"large_cast" => large_movies,
+			"small_cast" => small_movies,
+			"one_person" => one_person_movies,
+			
+		}
+
+	end
 	def read_description
 		if(self.description != nil )
 			s3 =  Aws::S3::Client.new(region: 'us-east-1')

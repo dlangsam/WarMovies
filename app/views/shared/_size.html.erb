@@ -11,8 +11,35 @@
                     </p>
 
                     </h3>
-                    <h5>More Info Coming Soon</h5>
+                 
                 </div>
+               
+                 <table class = "text-center"><tbody>
+                        <tr><th><h5 class = "text-center">Large Cast</h5> </th></tr>
+                             <% movies = @size_hash["large_cast"] %>
+                                        <% movies.each do |movie| %>
+                                        <tr><td class = "text-muted">
+                                            <%=movie.name%> ( <%=movie.year%> )
+                                        </td></tr>
+                            <% end %>
+
+                        <tr><th><h5 class = "text-center">Small Cast</h5> </th></tr>
+                             <% movies = @size_hash["small_cast"] %>
+                                        <% movies.each do |movie| %>
+                                        <tr><td class = "text-muted">
+                                            <%=movie.name%> ( <%=movie.year%> )
+                                        </td></tr>
+                            <% end %>
+
+                        <tr><th><h5 class = "text-center">Followed One Person</h5> </th></tr>
+                             <% movies = @size_hash["one_person"] %>
+                                        <% movies.each do |movie| %>
+                                        <tr><td class = "text-muted">
+                                            <%=movie.name%> ( <%=movie.year%> )
+                                        </td></tr>
+                            <% end %>
+                    </tbody></table>
+       
             </div>
 
 
