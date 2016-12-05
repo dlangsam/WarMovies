@@ -1,4 +1,5 @@
 class Movie < ApplicationRecord
+	has_many :comments
 	has_many :images, inverse_of: :movie
 	accepts_nested_attributes_for :images
 	def self.accurate_movies
