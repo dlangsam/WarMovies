@@ -33,14 +33,14 @@ ActiveRecord::Schema.define(version: 20161129205633) do
   end
 
   create_table "movies", force: :cascade do |t|
-    t.string   "name",        null: false
-    t.integer  "year",        null: false
-    t.string   "tagline"
+    t.string   "name",                     null: false
+    t.integer  "year",                     null: false
+    t.string   "tagline",     default: ""
     t.integer  "size"
     t.integer  "accuracy"
     t.boolean  "classic"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.string   "description"
   end
 
